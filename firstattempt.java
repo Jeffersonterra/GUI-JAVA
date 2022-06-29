@@ -37,6 +37,12 @@ JPasswordField passwordText = new JPasswordField();
 passwordText.setBounds(100, 50, 165, 25);
 panel.add(passwordText);
 
+		
+// adds button 6
+JButton button = new JButton("Login");
+button.setBounds(10,80, 80 ,25);
+panel.add(button);
+
 
 		
 
