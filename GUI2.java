@@ -6,6 +6,8 @@ class GUI2{
            frame.setSize(300,300);
           JButton button1 = new JButton("Vote yes");
           JButton button2 = new JButton("Vote no");
+            button1.setBounds(10, 20 , 80, 25);
+            button2..setBounds(100, 20 , 80, 25);
           frame.getContentPane().add(button1);
           frame.getContentPane().add(button2);
           frame.setVisible(true);
