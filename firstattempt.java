@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;//10
 
 import javax.swing.*;
 
-public class firstattempt  {
+public class firstattempt  implements ActionListener {
 //implements imports and generates method at 10
 	//parado aos 15 minutos do video
 	public static void main(String[] args) {
@@ -53,6 +53,12 @@ panel.add(success);// Just message at entering 7
 
 frame.setVisible(true);// always needed at the end
 
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
