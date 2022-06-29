@@ -31,6 +31,12 @@ panel.add(userText);
 JLabel passwordLabel = new JLabel("Password");
 passwordLabel.setBounds (10, 50 , 80 ,25);
 panel.add(passwordLabel);
+		
+//password text field 5
+JPasswordField passwordText = new JPasswordField();
+passwordText.setBounds(100, 50, 165, 25);
+panel.add(passwordText);
+
 
 		
 
