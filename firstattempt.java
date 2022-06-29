@@ -27,6 +27,11 @@ JTextField userText = new JTextField();
 userText.setBounds(100, 20, 165, 25);
 panel.add(userText);
 
+//parte que diz password 4
+JLabel passwordLabel = new JLabel("Password");
+passwordLabel.setBounds (10, 50 , 80 ,25);
+panel.add(passwordLabel);
+
 		
 
 
