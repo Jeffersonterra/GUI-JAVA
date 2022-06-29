@@ -43,6 +43,10 @@ JButton button = new JButton("Login");
 button.setBounds(10,80, 80 ,25);
 panel.add(button);
 
+button.addActionListener(new firstattempt());
+JLabel success = new JLabel("");
+success.setBounds(10, 110 , 300 , 25);
+panel.add(success);// Just message at entering 7
 
 		
 
