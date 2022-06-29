@@ -16,17 +16,25 @@ frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 frame.setVisible(true);
 frame.add(panel);
 panel.setLayout(null);
+		
 //creates the user icon name 2
 JLabel userlabel = new JLabel("User");
 userlabel.setBounds(10, 20 , 80, 25);
 panel.add(userlabel);
+		
+//Jtext field creates the text field 3
+JTextField userText = new JTextField();
+userText.setBounds(100, 20, 165, 25);
+panel.add(userText);
+
+		
 
 
 frame.setVisible(true);// always needed at the end
 
 	}
 
-
-	}
+}
+	
 
 
