@@ -75,6 +75,10 @@ frame.setVisible(true);// always needed at the end
 		String user = userText.getText();
 		String password = passwordText.getText();
 		System.out.println( user);
+		if(user.equals("Jeff") && password.equals("1585171")){
+			success.setText("Login successful!");
+		}
+		
 	}
 
 }
