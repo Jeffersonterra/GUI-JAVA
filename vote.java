@@ -56,31 +56,29 @@ public class vote implements ActionListener {
 
     }
 
-    @Override
+     @Override
     public void actionPerformed(ActionEvent e) {
       
         String user = userText.getText();
 
-        System.out.println(user);
+        if (user.equals("Yes") || user.equals("yes")) {
+            countyes++;
+
+        }
+        if (user.equals("No") || user.equals("no")) {
+            countno++;
+
+        }
+        total = countyes + countno;
+        success.setText("Vote successful!    Votes yes:  " + countyes + "   Votes no: " + countno);
+        totalvotes.setText("Votes total " + total);
 
         System.out.println("Yes: " + countyes);
 
         System.out.println("No: " + countno);
 
-        if (user.equals("Yes") || user.equals("yes")) {
-            countyes++;
-            success.setText("Vote successful!    Votes yes:  " + countyes + "   Votes no: " + countno);
-            total = countyes + countno;
-            totalvotes.setText("Votes total " + total);
-        }
-        if (user.equals("No") || user.equals("no")) {
-            countno++;
-            total = countyes + countno;
-            success.setText("Vote successful!    Votes yes:  " + countyes + "   Votes no: " + countno);
-            totalvotes.setText("Votes total " + total);
-
-        }
-
     }
+
+    
 
 }
