@@ -25,7 +25,7 @@ public class GUIRecatanglecalc implements ActionListener {
         panel.setLayout(null);
 
         // creates info icon
-        userlabel = new JLabel("Tell us your vote (only yes or no)");
+        userlabel = new JLabel("Input side a and side b to calculate area");
         userlabel.setBounds(10, 20, 220, 25);
         panel.add(userlabel);
 
