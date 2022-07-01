@@ -1,3 +1,5 @@
+
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -42,14 +44,20 @@ public class GUIRecatanglecalc implements ActionListener {
         button.setBounds(10, 80, 120, 25);
         panel.add(button);
 
-        // Generates action for the button 
-        // new method has to contain original method name
+        // Generates action for the button new method has to contain original method
+        // name
         button.addActionListener(new GUIRecatanglecalc());
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("Yes: " + countyes);
-        countyes++; // Used only to test if it is working properly
+
+        String math = mathText.getText();
+        String mathtwo = mathText.getText();
+        double sidea = Double.valueOf(math);
+        double sideb = Double.valueOf(mathtwo);
+        double area = sidea * sideb;
+        System.out.println(sidea + " X " + sideb);
+        System.out.println("Area: " + area);
     }
 }
