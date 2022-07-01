@@ -9,7 +9,7 @@ public class GUIRecatanglecalc implements ActionListener {
 
     private static JLabel userlabel;
     private static JButton button;
-
+    int countyes = 0;
 
     public static void main(String[] args) {
 
@@ -27,12 +27,18 @@ public class GUIRecatanglecalc implements ActionListener {
         userlabel.setBounds(10, 20, 220, 25);
         panel.add(userlabel);
 
-        //creates button icon for calculations
+        // creates button icon for calculations
         button = new JButton("Calculate");
-        button.setBounds(10, 80, 80, 25);
+        button.setBounds(10, 80, 120, 25);
         panel.add(button);
 
-        // Generates action for the button
-        button.addActionListener(new vote());
+        // Generates action for the button new method has to contain original method name
+        button.addActionListener(new GUIRecatanglecalc());
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("Yes: " + countyes);
+        countyes++; //Used only to test if it is working properly
     }
 }
