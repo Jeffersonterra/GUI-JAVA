@@ -42,8 +42,8 @@ public class GUIRecatanglecalc implements ActionListener {
         button.setBounds(10, 80, 120, 25);
         panel.add(button);
 
-        // Generates action for the button new method has to contain original method
-        // name
+        // Generates action for the button 
+        // new method has to contain original method name
         button.addActionListener(new GUIRecatanglecalc());
     }
 
