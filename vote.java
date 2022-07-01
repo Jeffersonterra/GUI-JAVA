@@ -1,4 +1,4 @@
-
+package GUI;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;//10
@@ -16,6 +16,7 @@ public class vote implements ActionListener {
     private static JLabel success;
     int countyes = 0;
     int countno = 0;
+    double total = countyes + countno;
 
     // implements imports and generates method at 10
     // parado aos 15 minutos do video
@@ -88,7 +89,7 @@ public class vote implements ActionListener {
         if (user.equals("No") || user.equals("no")) {
             countno++;
             success.setText("Vote successful! Votes yes:  " + countyes + "   Votes no: " + countno);
-            passwordLabel.setText("Votes no" + countno);
+            passwordLabel.setText("Votes total " + total);
 
         }
 
