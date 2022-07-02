@@ -1,15 +1,16 @@
 package GUI;
 
-
-
 import java.awt.Color;
+
 import javax.swing.*;
+
 
 public class guiGrades {
     private static JTextField gradeone;
     private static JTextField gradeTwo;
     private static JTextField gradeThree;
-    private static JTextField gradefour;
+    private static JTextField GradeFour;
+
     public static void main(String[] args) {
         JFrame frame = new JFrame();// creates frame and can name frame
         JPanel panel = new JPanel();
@@ -31,6 +32,12 @@ public class guiGrades {
         gradeone = new JTextField();
         gradeone.setBounds(250, 50, 165, 25);
         panel.add(gradeone);
+
+        // creates second interface to input math variables in the string
+        gradeTwo = new JTextField();
+        gradeTwo.setBounds(250, 50, 165, 25);
+        panel.add(gradeTwo);
+
 
     }
 }
