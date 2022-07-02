@@ -1,9 +1,15 @@
 package GUI;
 
-import java.awt.Color;
+import javax.swing.JFrame;
 
+import java.awt.Color;
 import javax.swing.*;
 
+import javax.swing.ImageIcon;
+
+import javax.swing.JPanel;
+
+import javax.swing.JLabel;
 
 public class guiGrades {
     private static JTextField gradeone;
@@ -35,20 +41,18 @@ public class guiGrades {
 
         // creates second interface to input math variables in the string
         gradeTwo = new JTextField();
-        gradeTwo.setBounds(250, 50, 165, 25);
+        gradeTwo.setBounds(250, 100, 165, 25);
         panel.add(gradeTwo);
-        
-        
+
         // creates second interface to input math variables in the string
         gradeThree = new JTextField();
-        gradeThree.setBounds(250, 50, 165, 25);
+        gradeThree.setBounds(250, 150, 165, 25);
         panel.add(gradeThree);
 
-
-        
         // creates second interface to input math variables in the string
         GradeFour = new JTextField();
-        GradeFour.setBounds(250, 50, 165, 25);
+        GradeFour.setBounds(250, 200, 165, 25);
         panel.add(GradeFour);
+
     }
 }
