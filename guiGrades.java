@@ -1,15 +1,7 @@
 package GUI;
 
-import javax.swing.JFrame;
-
 import java.awt.Color;
 import javax.swing.*;
-
-import javax.swing.ImageIcon;
-
-import javax.swing.JPanel;
-
-import javax.swing.JLabel;
 
 public class guiGrades {
     private static JTextField gradeone;
