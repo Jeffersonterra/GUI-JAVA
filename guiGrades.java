@@ -37,6 +37,12 @@ public class guiGrades {
         gradeTwo = new JTextField();
         gradeTwo.setBounds(250, 50, 165, 25);
         panel.add(gradeTwo);
+        
+        
+        // creates second interface to input math variables in the string
+        gradeThree = new JTextField();
+        gradeThree.setBounds(250, 50, 165, 25);
+        panel.add(gradeThree);
 
 
     }
