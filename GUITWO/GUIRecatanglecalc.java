@@ -21,8 +21,11 @@ public class GUIRecatanglecalc implements ActionListener {
         JPanel panel = new JPanel();
 
         // makes and sets icon
-        ImageIcon image = new ImageIcon("C:/Users/jefferson/Documents/GitHub/myCode/GUI/math.png");// properly
+        ImageIcon image = new ImageIcon("math.png");// properly
         frame.setIconImage(image.getImage());
+        
+        /*For full computer directory file acess use C:/Users/jefferson/Documents/GitHub/myCode/GUI/math.png
+        In the pc i am currently using its only working this way  */
 
         frame.setSize(100, 100);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
