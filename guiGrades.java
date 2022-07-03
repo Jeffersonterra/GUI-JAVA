@@ -1,3 +1,4 @@
+
 package GUI;
 
 import java.awt.event.ActionEvent;
@@ -17,10 +18,13 @@ public class guiGrades implements ActionListener {
         JFrame frame = new JFrame();// creates frame and can name frame
         JPanel panel = new JPanel();
         gradeOne = new JTextField();
-        ImageIcon image = new ImageIcon("logo.jnlp");// not working properly
+        ImageIcon image = new ImageIcon("C:/Users/jefferson/Documents/GitHub/myCode/GUI/logo.png");
+                                                                                                   
         frame.setSize(600, 600);
         JLabel label = new JLabel("Grades will be calculated and Students for all students");
+        JLabel labeltwo = new JLabel();
         frame.add(label);
+        frame.setIconImage(image.getImage());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// makes it so it closes after clicking x
         // can also do nothing or just hide
 
@@ -37,7 +41,12 @@ public class guiGrades implements ActionListener {
 
         // sets label
         label.setBounds(0, 0, 260, 25);
-        label.setIcon(image);// not working properly
+
+        /*
+         * labeltwo.setBounds(200, 0, 10, 10);
+         * labeltwo.setIcon(image);
+         * frame.add(labeltwo);
+         */
 
         // creates interface to input math variables in the string
         gradeOne = new JTextField();
