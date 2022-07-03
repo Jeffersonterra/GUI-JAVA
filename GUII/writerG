@@ -1,0 +1,21 @@
+package GUI;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class writerG {
+    public static void main(String args[]) throws IOException {
+        try {
+            vote v1 = new vote();
+            FileWriter writer = new FileWriter("C:/Users/jefferson/Documents/GitHub/myCode/GUI/results.txt");
+
+            writer.write("");
+            writer.append("Votes no: " + v1.countno);
+            writer.append("\nVotes yes: " + v1.countyes);
+            writer.close();
+        } catch (IOException e) {
+            // AUTO GENERATED CATCH BLOCK
+            e.printStackTrace();
+        }
+    }
+}
