@@ -18,7 +18,7 @@ public class guiGrades implements ActionListener {
         JFrame frame = new JFrame();// creates frame and can name frame
         JPanel panel = new JPanel();
         gradeOne = new JTextField();
-        ImageIcon image = new ImageIcon("C:/Users/jefferson/Documents/GitHub/myCode/GUI/logo.png");
+        ImageIcon image = new ImageIcon("GUI/logo.png");
                                                                                                    
         frame.setSize(600, 600);
         JLabel label = new JLabel("Grades will be calculated and Students for all students");
