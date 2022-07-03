@@ -1,4 +1,6 @@
 package GUITWO;
+
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -17,6 +19,11 @@ public class GUIRecatanglecalc implements ActionListener {
         // generates JFrame
         JFrame frame = new JFrame("Area of reactangle calc");
         JPanel panel = new JPanel();
+
+        // makes and sets icon
+        ImageIcon image = new ImageIcon("C:/Users/jefferson/Documents/GitHub/myCode/GUI/math.png");// properly
+        frame.setIconImage(image.getImage());
+
         frame.setSize(100, 100);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
@@ -57,7 +64,7 @@ public class GUIRecatanglecalc implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         String math = mathText.getText();
-        String mathtwo = mathText.getText();
+        String mathtwo = mathtwoText.getText();
         double sidea = Double.valueOf(math);
         double sideb = Double.valueOf(mathtwo);
         double area = sidea * sideb;
