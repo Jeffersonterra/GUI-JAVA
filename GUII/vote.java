@@ -37,6 +37,13 @@ public class vote implements ActionListener {
         userText.setBounds(200, 20, 165, 25);
         panel.add(userText);
         
+        
+        ImageIcon image = new ImageIcon("math.png");
+        frame.setIconImage(image.getImage());
+        
+        /*For full computer directory file acess use C:/Users/jefferson/Documents/GitHub/myCode/GUI/math.png
+        In the pc i am currently using its only working this way  */
+        
         totalvotes = new JLabel("Total Votes");
         totalvotes.setBounds(10, 50, 300, 25);
         panel.add(totalvotes);
