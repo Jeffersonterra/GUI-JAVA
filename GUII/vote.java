@@ -38,7 +38,7 @@ public class vote implements ActionListener {
         panel.add(userText);
         
         
-        ImageIcon image = new ImageIcon("math.png");
+        ImageIcon image = new ImageIcon("vote.png");
         frame.setIconImage(image.getImage());
         
         /*For full computer directory file acess use C:/Users/jefferson/Documents/GitHub/myCode/GUI/math.png
