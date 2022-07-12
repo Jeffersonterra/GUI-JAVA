@@ -72,6 +72,7 @@ frame.setVisible(true);// always needed at the end
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
+		//CHECKS IF PASSWARD AND USER NAME ARE CORRECT
 		String user = userText.getText();
 		String password = passwordText.getText();
 		System.out.println( user);
