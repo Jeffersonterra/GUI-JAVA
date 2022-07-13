@@ -12,7 +12,9 @@ class GUI2{
            JButton button2 = new JButton("Vote no");
            button2.setBounds(100, 20 , 80, 25);
            frame.getContentPane().add(button2);
-            
+            //trying to find a way to 
+            // to make each button to have a 
+            // diferent action
           frame.setVisible(true);
      }
 }
