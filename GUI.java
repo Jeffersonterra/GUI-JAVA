@@ -5,6 +5,7 @@ class GUI {
         JFrame frame = new JFrame("Election");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 300);
+// creates new button
         JButton button = new JButton("Press here to vote");
         frame.getContentPane().add(button); // Adds Button to content pane of frame
         frame.setVisible(true);
