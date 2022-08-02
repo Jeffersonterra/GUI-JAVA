@@ -62,7 +62,7 @@ public class TEMPEREATUREGUI implements ActionListener {
         double TemperatureC = Double.valueOf(temperature);
         double TemperatureFa = (TemperatureC * 9 / 5) + 32;
 
-        System.out.println("Temperature is: " + TemperatureFa);
+        System.out.println("Temperature in Fahrenheit is : " + TemperatureFa);
 
         TemperatureF.setText("Temperature Fahrenheit: " + TemperatureFa);
     }
