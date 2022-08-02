@@ -7,7 +7,6 @@ import javax.swing.*;
 
 public class TEMPEREATUREGUI implements ActionListener {
 
-
     private static JTextField temp;
     private static JButton button;
     private static JLabel TemperatureF;
@@ -22,7 +21,6 @@ public class TEMPEREATUREGUI implements ActionListener {
         frame.setResizable(false);// makes it so it can not be resized
         panel.setLayout(null);
 
-        
         frame.setSize(360, 300);
         JLabel label = new JLabel("Calcuator will convert celcius to fahrenheit: ");
         // creates interface to input temperature
@@ -43,14 +41,14 @@ public class TEMPEREATUREGUI implements ActionListener {
 
         frame.add(label);
         frame.setIconImage(image.getImage());
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);///* makes
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);/// * makes
                                                              // it so
                                                              // it
                                                              // closes
                                                              // after
                                                              // clicking
                                                              // x*/
-        
+
         button.addActionListener(new TEMPEREATUREGUI());
         frame.setVisible(true);
     }
@@ -61,9 +59,10 @@ public class TEMPEREATUREGUI implements ActionListener {
         String temperature = temp.getText();
 
         double TemperatureC = Double.valueOf(temperature);
+        double TemperatureFa = (TemperatureC * 9 / 5) + 32;
 
         System.out.println("Temperature is: " + TemperatureC);
 
-        TemperatureF.setText("TemperatureF" + TemperatureC);
+        TemperatureF.setText("TemperatureF" + TemperatureFa);
     }
 }
