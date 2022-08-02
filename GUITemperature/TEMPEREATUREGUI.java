@@ -10,6 +10,7 @@ public class TEMPEREATUREGUI implements ActionListener {
     private static JTextField temp;
     private static JButton button;
     private static JLabel TemperatureF;
+    private static JLabel tempC;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();// creates frame and can name frame
@@ -18,7 +19,7 @@ public class TEMPEREATUREGUI implements ActionListener {
         frame.setVisible(true);// makes frame visible
         frame.setTitle("Tempereture");// sets title
         frame.add(panel);
-        frame.setResizable(false);// makes it so it can not be resized
+        frame.setResizable(true);// makes it so it can not be resized
         panel.setLayout(null);
 
         frame.setSize(360, 300);
@@ -27,9 +28,14 @@ public class TEMPEREATUREGUI implements ActionListener {
         temp = new JTextField();
         temp.setBounds(100, 150, 165, 25);
         panel.add(temp);
+
+        // interface to show temperature in celcius
+        tempC = new JLabel("Celcius: ");
+        tempC.setBounds(10, 150, 165, 25);
+        panel.add(tempC);
         // creates point that shows the temperature
         TemperatureF = new JLabel("");
-        TemperatureF.setBounds(100, 0, 200, 25);
+        TemperatureF.setBounds(10, 0, 200, 25);
         panel.add(TemperatureF);
 
         // creates button icon for calculations
@@ -41,13 +47,8 @@ public class TEMPEREATUREGUI implements ActionListener {
 
         frame.add(label);
         frame.setIconImage(image.getImage());
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);/// * makes
-                                                             // it so
-                                                             // it
-                                                             // closes
-                                                             // after
-                                                             // clicking
-                                                             // x*/
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //makes it so it closes after clicking on "X"
 
         button.addActionListener(new TEMPEREATUREGUI());
         frame.setVisible(true);
@@ -61,8 +62,8 @@ public class TEMPEREATUREGUI implements ActionListener {
         double TemperatureC = Double.valueOf(temperature);
         double TemperatureFa = (TemperatureC * 9 / 5) + 32;
 
-        System.out.println("Temperature is: " + TemperatureC);
+        System.out.println("Temperature is: " + TemperatureFa);
 
-        TemperatureF.setText("TemperatureF" + TemperatureFa);
+        TemperatureF.setText("Temperature Fahrenheit: " + TemperatureFa);
     }
 }
