@@ -1,4 +1,4 @@
-package GUIMART;
+package GUI;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,7 +8,7 @@ public class market {
     public static void main(String args[]) {
         JFrame frame = new JFrame();// creates frame and can name frame
         JPanel panel = new JPanel();
-        ImageIcon image = new ImageIcon("C:/Users/jefferson/Documents/GitHub/myCode/GUI/celcius.png");
+        ImageIcon image = new ImageIcon("C:/Users/jefferson/Documents/GitHub/myCode/GUI/super.png");
         frame.setVisible(true);// makes frame visible
         frame.setTitle("Super DuppperMart");// sets title
         frame.add(panel);
