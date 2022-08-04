@@ -21,7 +21,7 @@ public class market {
         frame.setVisible(true);// makes frame visible
         frame.setTitle("Super DuppperMart");// sets title
         frame.add(panel);
-        frame.setResizable(true);// makes it so it can not be resized
+        frame.setResizable(true);// makes it so it can be resized
         panel.setLayout(null);
         frame.setSize(360, 300);
 
