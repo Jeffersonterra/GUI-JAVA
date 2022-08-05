@@ -154,5 +154,16 @@ public class market implements ActionListener {
         System.out.println("Test: " + totalFiveDouble);
         System.out.println("Test: " + totalSixDouble);
         System.out.println("Test: " + totalSevenDouble);
+        double subTotalOne = totalOneDouble * 5;
+        double subTotalTwo = totalTwoDouble * 9;
+        double subTotalThree = totalThreeDouble * 7;
+        double subTotalFour = totalFourDouble * 1;
+        double subTotalFive = totalFiveDouble * 0.75;
+        double subTotalSix = totalSixDouble * 11;
+        double subTotalSeven = totalSevenDouble * 5.5;
+        double TotalTotal = subTotalOne + subTotalTwo + subTotalThree + subTotalFour + subTotalFive + subTotalSix
+                + subTotalSeven;
+        System.out.println("Total to pay: " + TotalTotal);
+
     }
 }
