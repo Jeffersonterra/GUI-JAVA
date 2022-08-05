@@ -131,19 +131,19 @@ public class market implements ActionListener {
         String totalTwoString = item2.getText();
         double totalTwoDouble = Double.valueOf(totalTwoString);
 
-        String totalThreeString = item2.getText();
+        String totalThreeString = item3.getText();
         double totalThreeDouble = Double.valueOf(totalThreeString);
 
-        String totalFourString = item1.getText();
+        String totalFourString = item4.getText();
         double totalFourDouble = Double.valueOf(totalFourString);
 
-        String totalFiveString = item1.getText();
+        String totalFiveString = item5.getText();
         double totalFiveDouble = Double.valueOf(totalFiveString);
 
-        String totalSixString = item1.getText();
+        String totalSixString = item6.getText();
         double totalSixDouble = Double.valueOf(totalSixString);
 
-        String totalSevenString = item1.getText();
+        String totalSevenString = item7.getText();
         double totalSevenDouble = Double.valueOf(totalSevenString);
 
         System.out.println("Test: " + totalOneDouble);
