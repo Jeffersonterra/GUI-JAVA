@@ -1,6 +1,5 @@
 package GUIMART;
 
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
@@ -140,10 +139,14 @@ public class market implements ActionListener {
         String totalFiveString = item1.getText();
         double totalFiveDouble = Double.valueOf(totalFiveString);
 
+        String totalSixString = item1.getText();
+        double totalSixDouble = Double.valueOf(totalSixString);
+
         System.out.println("Test: " + totalOneDouble);
         System.out.println("Test: " + totalTwoDouble);
         System.out.println("Test: " + totalThreeDouble);
         System.out.println("Test: " + totalFourDouble);
         System.out.println("Test: " + totalFiveDouble);
+        System.out.println("Test: " + totalSixDouble);
     }
 }
