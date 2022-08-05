@@ -24,6 +24,7 @@ public class market implements ActionListener {
     private static JLabel itemsix;
     private static JLabel itemseven;
     private static JButton button;
+    private static JLabel total;
 
     public static void main(String args[]) {
         JFrame frame = new JFrame();// Creates frame and can name frame
@@ -112,6 +113,11 @@ public class market implements ActionListener {
         welcome.setBounds(0, 0, 600, 25);
         panel.add(welcome);
 
+        // creates Jlabel fot total billing
+        total = new JLabel("");
+        total.setBounds(300, 400, 600, 25);
+        panel.add(total);
+
         frame.add(label);
         frame.setIconImage(image.getImage());// takes element created image and adds to logo icon
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Makes it so it closes on 'X'
@@ -163,7 +169,7 @@ public class market implements ActionListener {
         double subTotalSeven = totalSevenDouble * 5.5;
         double TotalTotal = subTotalOne + subTotalTwo + subTotalThree + subTotalFour + subTotalFive + subTotalSix
                 + subTotalSeven;
-        System.out.println("Total to pay: " + TotalTotal);
-
+        System.out.println("Total to pay: $" + TotalTotal);
+        total.setText("Total to pay: $" + TotalTotal);
     }
 }
