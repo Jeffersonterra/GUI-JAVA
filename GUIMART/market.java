@@ -1,6 +1,7 @@
 package GUIMART;
 
 
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
@@ -92,7 +93,7 @@ public class market implements ActionListener {
         panel.add(itemfour);
 
         // creates text identifier for product quantity
-        itemfive = new JLabel("Salad $11,00");
+        itemfive = new JLabel("Candy $0,75");
         itemfive.setBounds(10, 240, 200, 25);
         panel.add(itemfive);
 
